@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>singlepageambrebouhaigour</title>
+    <link href="./css/base.css" rel="stylesheet" type="text/css" />
+    <script src="./script/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="head">
+        <div id="reseaux">
+          <nav>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Linkedin</a>
+          </nav>
+        </div>
+
+        <img class="logo" src="./img/logo.png" alt="Logo AmbreB" />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+          "
+        >
+          <h2>AMBRE BOUHAIGOUR</h2>
+          <h1>UX DESIGN & INFOGRAPHISTE</h1>
+        </div>
+      </div>
+    </header>
+
+    <div id="apropos">
+      <div id="contenairImg">
+        <img id="portrait" src="./img/portrait.png" alt="Portait AmbreB" />
+      </div>
+      <div id="contenairText">
+        <div style="height: 50px"></div>
+        <h1>UX DESIGN & INFOGRAPHISTE</h1>
+        <h2>Ambre Bouhaigour</h2>
+
+        <p>
+          Je m’appelle Ambre. Je suis étudiante en design graphique en print et
+          en web. Ce qui ma permis au fur à mesure de mon expérience d’acquérir
+          des notion en communication, en audio visuel ainsi quand animation 2D.
+        </p>
+        <p>
+          Actuellement je me forme dans la Licence Professionnelle Métiers du
+          design Numérique et de la Communication Créer par Mr Labbé professeur
+          pédagogique.
+        </p>
+        <div style="height: 20px"></div>
+        <a href="./file/cv.pdf"><div class="button">CV</div></a>
+      </div>
+    </div>
+
+    <div id="competences">
+      <div class="titre">Que puis-je faire pour vous ?</div>
+      <div class="tiret"></div>
+      <div style="display: flex; flex-wrap: wrap">
+        <div>
+          <div class="square">
+            <img src="./img/image1.png" width="100%" height="100%" alt="" />
+          </div>
+          <div class="square texteCompetence">
+            <div class="contour">
+              <span class="textComp">Web design</span>
+              <div class="divider"></div>
+              <a class="texteBouton">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="square texteCompetence">
+            <div class="contour">
+              <span class="textComp">Print & Web</span>
+              <div class="divider"></div>
+              <a class="texteBouton">En savoir plus</a>
+            </div>
+          </div>
+          <div class="square">
+            <img src="./img/image2.png" width="100%" height="100%" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="square">
+            <img src="./img/image3.png" width="100%" height="100%" alt="" />
+          </div>
+          <div class="square texteCompetence">
+            <div class="contour">
+              <span class="textComp">Identité graphique</span>
+              <div class="divider"></div>
+              <a class="texteBouton">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cv">
+      <div class="titreComp">
+        <div
+          onclick="show('compjs', 'parcoursjs')"
+          style="display: flex; width: 20%; justify-content: flex-end"
+        >
+          <a>Mes compétences</a>
+        </div>
+        <div class="vl"></div>
+        <div
+          onclick="show('parcoursjs', 'compjs')"
+          style="width: 20%; display: flex; justify-content: flex-start"
+        >
+          <a>Parcours</a>
+        </div>
+      </div>
+
+      <div id="compjs">
+        <div class="compRow">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="compText">Réseaux<br />sociaux</p>
+              </div>
+              <div class="flip-card-back">
+                <img src="./img/rs.png" alt="Avatar" class="flipImg" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="compText">Communication<br />visuelle</p>
+              </div>
+              <div class="flip-card-back">
+                <img src="./img/com.png" alt="Avatar" class="flipImg" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="compText">motion<br />design</p>
+              </div>
+              <div class="flip-card-back">
+                <img src="./img/motion.png" alt="Avatar" class="flipImg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="compRow">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="compText">Print</p>
+              </div>
+              <div class="flip-card-back">
+                <img src="./img/print.png" alt="Avatar" class="flipImg" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="compText">web<br />mobile<br />design</p>
+              </div>
+              <div class="flip-card-back">
+                <img src="./img/web_mobile.png" alt="Avatar" class="flipImg" />
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p class="compText">web</p>
+              </div>
+              <div class="flip-card-back">
+                <img src="./img/web.png" alt="Avatar" class="flipImg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="parcoursjs">
+        <div class="parcoursRow">
+          <div class="parcoursCase">
+            <div class="parcoursTitre">études</div>
+            <div class="parcoursCaseContainer">
+              <div class="case">
+                <div class="caseYear">2020 / 2021</div>
+                <div class="caseText">
+                  Licence Professionnelle<br />Métier du Design & de la
+                  Communication
+                </div>
+              </div>
+              <div class="case">
+                <div class="caseYear">2017 / 2020</div>
+                <div class="caseText">
+                  Licence 1 d'Art appliqué<br />À l'université de Corse
+                </div>
+              </div>
+              <div class="case">
+                <div class="caseYear">2016 / 2017</div>
+                <div class="caseText">
+                  Licence de langue étrangère<br />Appliqué LEA, à Angers
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parcoursVl"></div>
+          <div class="parcoursCase">
+            <div class="parcoursTitre">études</div>
+            <div class="parcoursCaseContainer">
+              <div class="case">
+                <div class="caseYear">2020 / 2021</div>
+                <div class="caseText">
+                  Contrat d'alternance en tant que<br />Infographiste & Web
+                  designer<br />Dans la start up <b>Volpy</b>
+                </div>
+              </div>
+              <div class="case">
+                <div class="caseYear">2019 / 2020</div>
+                <div class="caseText">Animatrice chez Kiara</div>
+              </div>
+              <div class="case">
+                <div class="caseYear">2018 / 2019</div>
+                <div class="caseText">
+                  Restauration & serveuse chez<br />La cave à vin
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img
+      src="./img/wall.png"
+      height="200"
+      width="100%"
+      style="margin-top: 80px; margin-bottom: 80px"
+    />
+
+    <div id="portfolio">
+      <div class="titre">mes projets à la une</div>
+      <div class="tiret"></div>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-evenly;
+        "
+      >
+        <div style="display: flex; flex-direction: column">
+          <img
+            src="./img/oysho.png"
+            height="350"
+            width="220"
+            class="imgPortfolio"
+          />
+          <div class="portContainer">
+            <span class="titrePortfolio">Projet #1</span>
+            <div class="littleTiret"></div>
+            <span class="textPortfolio">Oysho</span>
+          </div>
+          <!-- <div>test</div> -->
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <img
+            src="./img/packaging.png"
+            height="350"
+            width="220"
+            class="imgPortfolio"
+          />
+          <div class="portContainer">
+            <span class="titrePortfolio">Projet #2</span>
+            <div class="littleTiret"></div>
+            <span class="textPortfolio">Application UI</span>
+          </div>
+          <!-- <div>test</div> -->
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <img
+            src="./img/tshirt.png"
+            height="350"
+            width="220"
+            class="imgPortfolio"
+          />
+          <div class="portContainer">
+            <span class="titrePortfolio">Projet #3</span>
+            <div class="littleTiret"></div>
+            <span class="textPortfolio">Brochure</span>
+          </div>
+          <!-- <div>test</div> -->
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <div
+            class="portContainer"
+            style="align-items: flex-start; padding-top: 0px"
+          >
+            <span
+              class="titrePortfolio"
+              style="
+                text-transform: uppercase;
+                font-size: 20px;
+                padding-bottom: 35px;
+              "
+              >Projets réalisés<br />durant l'année<br />2020/2021</span
+            >
+            <div class="tiret" style="margin-bottom: 35px"></div>
+            <a href="#portLink"><div class="portButton">VIEW MORE</div></a>
+          </div>
+          <!-- <div>test</div> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="port">
+      <div id="portLink">
+        <div style="display: flex; justify-content: flex-end">
+          <a class="filter active" data-filter="all">All</a>
+        </div>
+        <div style="display: flex; justify-content: flex-start">
+          <a class="filter" data-filter="print">Print</a>
+        </div>
+        <div style="display: flex; justify-content: flex-start">
+          <a class="filter" data-filter="graphicdesign">Graphic Design</a>
+        </div>
+        <div style="display: flex; justify-content: flex-start">
+          <a class="filter" data-filter="photo">Photo</a>
+        </div>
+        <div style="display: flex; justify-content: flex-start">
+          <a class="filter" data-filter="video">Video</a>
+        </div>
+      </div>
+
+      <div id="portGallery">
+        <img
+          src="./img/gallery1.png"
+          class="portImg all graphicdesign"
+          width="315" height="270"
+        />
+        <img
+          src="./img/gallery2.png"
+          class="portImg all graphicdesign"
+          width="325" height="270"
+        />
+        <img src="./img/gallery3.png" class="portImg all print" width="312" height="270" />
+        <img
+          src="./img/gallery4.png"
+          class="portImg all graphicdesign"
+          width="315" height="270"
+        />
+        <img
+          src="./img/gallery5.png"
+          class="portImg all graphicdesign"
+          width="398" height="270"
+        />
+        <img src="./img/gallery6.png" class="portImg all photo" width="402" height="270" />
+        <img src="./img/gallery7.png" class="portImg all video" width="402" height="270" />
+      </div>
+    </div>
+
+    <script src="./script/jquery.min.js"></script>
+
+    <script>
+      function myFunction() {
+        document.getElementById("panel").style.display = "block";
+      }
+
+      $("#portLink div a").click(function () {
+        // on recupère la valeur du filtre
+        value = $(this).data("filter");
+        // on enlève la classe active de l'ancien élément
+        $("#portLink div a").removeClass("active"),
+          // on ajoute la classe active sur l'élément cliqué
+          $(this).addClass("active");
+
+        // pour chaque div
+        $("#portGallery img").each(function () {
+          el = $(this);
+          // on montre tout
+          el.show();
+          // on teste si l'élément n'a pas la classe du filtre ou que l'utilisateur ne souhaite pas tout affiché
+          if (!el.hasClass(value) && value != "all") el.hide(); // on cache les éléments qu'on ne souhaite pas voir
+        });
+      });
+    </script>
+  </body>
+</html>
