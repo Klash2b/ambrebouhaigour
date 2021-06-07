@@ -611,3 +611,9 @@ transition-duration: 0.5s; */
   width: 5%;
   margin-left: .6rem;
 }
+
+.navigator ul li a .active{
+  content:url("../img/nav.svg");
+  width: 20%;
+  margin-left: -.4rem;;
+}
