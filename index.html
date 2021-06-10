@@ -34,7 +34,11 @@
         <img class="barre" src="img/barre.svg" alt="" />
         <li>
           <a class="nav-link" id="servicesnav" href="#competences"
-            ><img class="circle-nav" id="servicesImage" src="img/cercle.svg" alt=""
+            ><img
+              class="circle-nav"
+              id="servicesImage"
+              src="img/cercle.svg"
+              alt=""
           /></a>
           <span>Services</span>
         </li>
@@ -63,7 +67,11 @@
         <img class="barre" src="img/barre.svg" alt="" />
         <li>
           <a class="nav-link" id="contactNav" href="#contact"
-            ><img class="circle-nav" id="contactImage" src="img/cercle.svg" alt=""
+            ><img
+              class="circle-nav"
+              id="contactImage"
+              src="img/cercle.svg"
+              alt=""
           /></a>
           <span>Contact</span>
         </li>
@@ -130,7 +138,7 @@
             <div class="contour">
               <span class="textComp">Web design</span>
               <div class="divider"></div>
-              <a class="texteBouton">En savoir plus</a>
+              <a class="texteBouton" id="modalWebdesignBtn">En savoir plus</a>
             </div>
           </div>
         </div>
@@ -139,7 +147,7 @@
             <div class="contour">
               <span class="textComp">Print & Web</span>
               <div class="divider"></div>
-              <a class="texteBouton">En savoir plus</a>
+              <a class="texteBouton" id="modalPrintBtn">En savoir plus</a>
             </div>
           </div>
           <div class="square">
@@ -154,7 +162,9 @@
             <div class="contour">
               <span class="textComp">Identité graphique</span>
               <div class="divider"></div>
-              <a class="texteBouton">En savoir plus</a>
+              <a class="texteBouton" id="modalIdentitegraphiqueBtn"
+                >En savoir plus</a
+              >
             </div>
           </div>
         </div>
@@ -317,7 +327,10 @@
           justify-content: space-evenly;
         "
       >
-        <div style="display: flex; flex-direction: column">
+        <div
+          style="display: flex; flex-direction: column; cursor: pointer"
+          id="modalLogoBtn"
+        >
           <img
             src="./img/oysho.png"
             height="350"
@@ -329,9 +342,11 @@
             <div class="littleTiret"></div>
             <span class="textPortfolio">Oysho</span>
           </div>
-          <!-- <div>test</div> -->
         </div>
-        <div style="display: flex; flex-direction: column">
+        <div
+          style="display: flex; flex-direction: column; cursor: pointer"
+          id="modalApplicationBtn"
+        >
           <img
             src="./img/packaging.png"
             height="350"
@@ -343,9 +358,11 @@
             <div class="littleTiret"></div>
             <span class="textPortfolio">Application UI</span>
           </div>
-          <!-- <div>test</div> -->
         </div>
-        <div style="display: flex; flex-direction: column">
+        <div
+          style="display: flex; flex-direction: column; cursor: pointer"
+          id="modalTshirtBtn"
+        >
           <img
             src="./img/tshirt.png"
             height="350"
@@ -357,7 +374,6 @@
             <div class="littleTiret"></div>
             <span class="textPortfolio">Brochure</span>
           </div>
-          <!-- <div>test</div> -->
         </div>
         <div style="display: flex; flex-direction: column">
           <div
@@ -376,7 +392,6 @@
             <div class="tiret" style="margin-bottom: 35px"></div>
             <a href="#portLink"><div class="portButton">VIEW MORE</div></a>
           </div>
-          <!-- <div>test</div> -->
         </div>
       </div>
     </div>
@@ -402,42 +417,49 @@
 
       <div id="portGallery">
         <img
+          id="modalApplicationBtnBis"
           src="./img/gallery1.png"
           class="portImg all graphicdesign"
           width="315"
           height="270"
         />
         <img
+          id="modalLogoBtnBis"
           src="./img/gallery2.png"
           class="portImg all graphicdesign"
           width="325"
           height="270"
         />
         <img
+          id="modalBrochureBtn"
           src="./img/gallery3.png"
           class="portImg all print"
           width="312"
           height="270"
         />
         <img
+          id="modalTshirtBtnBis"
           src="./img/gallery4.png"
           class="portImg all graphicdesign"
           width="315"
           height="270"
         />
         <img
+          id="modalMashupBtn"
           src="./img/gallery5.png"
           class="portImg all graphicdesign"
           width="398"
           height="270"
         />
         <img
+          id="modalPhotographieBtn"
           src="./img/gallery6.png"
           class="portImg all photo"
           width="402"
           height="270"
         />
         <img
+          id="modalMontageBtn"
           src="./img/gallery7.png"
           class="portImg all video"
           width="402"
@@ -529,6 +551,246 @@
       <span>©2020 - Created by Ambre Bouhaigour </span>
     </div>
 
+    <div id="myModal1" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalWebdesignImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal2" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalPrintImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal3" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalIdentitegraphiqueImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal4" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalLogoImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal5" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalApplicationImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal6" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalTshirtImg" />
+      <div id="caption"></div>
+    </div>
+    
+    <div id="myModal7" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalBrochureImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal8" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalMashupImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal9" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalPhotographieImg" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal10" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalMontageImg" />
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      // Récupérer les modals
+      var modal = document.getElementById("myModal1");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      var modal4 = document.getElementById("myModal4");
+      var modal5 = document.getElementById("myModal5");
+      var modal6 = document.getElementById("myModal6");
+      var modal7 = document.getElementById("myModal7");
+      var modal8 = document.getElementById("myModal8");
+      var modal9 = document.getElementById("myModal9");
+      var modal10 = document.getElementById("myModal10");
+
+      // 1
+      var a = document.getElementById("modalWebdesignBtn");
+      var modalImg = document.getElementById("modalWebdesignImg");
+      a.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = "./img/modalWebdesign.jpg";
+      };
+
+      // 2
+      var a2 = document.getElementById("modalPrintBtn");
+      var modalImg2 = document.getElementById("modalPrintImg");
+      a2.onclick = function () {
+        modal2.style.display = "block";
+        modalImg2.src = "./img/modalPrint.jpg";
+      };
+
+      // 3
+      var a3 = document.getElementById("modalIdentitegraphiqueBtn");
+      var modalImg3 = document.getElementById("modalIdentitegraphiqueImg");
+      a3.onclick = function () {
+        modal3.style.display = "block";
+        modalImg3.src = "./img/modalIdentitegraphique.jpg";
+      };
+
+      // 4
+      var a4 = document.getElementById("modalLogoBtn");
+      var a4Bis = document.getElementById("modalLogoBtnBis");
+      var modalImg4 = document.getElementById("modalLogoImg");
+      a4.onclick = function () {
+        modal4.style.display = "block";
+        modalImg4.src = "./img/modalLogo.jpg";
+      };
+      a4Bis.onclick = function () {
+        modal5.style.display = "block";
+        modalImg5.src = "./img/modalLogo.jpg";
+      };
+
+      // 5
+      var a5 = document.getElementById("modalApplicationBtn");
+      var a5Bis = document.getElementById("modalApplicationBtnBis");
+      var modalImg5 = document.getElementById("modalApplicationImg");
+      a5.onclick = function () {
+        modal5.style.display = "block";
+        modalImg5.src = "./img/modalApplication.jpg";
+      };
+      a5Bis.onclick = function () {
+        modal5.style.display = "block";
+        modalImg5.src = "./img/modalApplication.jpg";
+      };
+
+      // 6
+      var a6 = document.getElementById("modalTshirtBtn");
+      var a6Bis = document.getElementById("modalTshirtBtnBis");
+      var modalImg6 = document.getElementById("modalTshirtImg");
+      a6.onclick = function () {
+        modal6.style.display = "block";
+        modalImg6.src = "./img/modalTshirt.jpg";
+      };
+      a6Bis.onclick = function () {
+        modal5.style.display = "block";
+        modalImg5.src = "./img/modalTshirt.jpg";
+      };
+
+      // 7
+      var a7 = document.getElementById("modalBrochureBtn");
+      var a7Bis = document.getElementById("modalBrochureBtnBis");
+      var modalImg7 = document.getElementById("modalBrochureImg");
+      a7.onclick = function () {
+        modal7.style.display = "block";
+        modalImg7.src = "./img/modalBrochure.jpg";
+      };
+
+      // 8
+      var a8 = document.getElementById("modalMashupBtn");
+      var modalImg8 = document.getElementById("modalMashupImg");
+      a8.onclick = function () {
+        modal8.style.display = "block";
+        modalImg8.src = "./img/modalMashup.jpg";
+      };
+
+      // 9
+      var a9 = document.getElementById("modalPhotographieBtn");
+      var modalImg9 = document.getElementById("modalPhotographieImg");
+      a9.onclick = function () {
+        modal9.style.display = "block";
+        modalImg9.src = "./img/modalPhotographie.jpg";
+      };
+
+      // 10
+      var a10 = document.getElementById("modalMontageBtn");
+      var modalImg10 = document.getElementById("modalMontageImg");
+      a10.onclick = function () {
+        modal10.style.display = "block";
+        modalImg10.src = "./img/modalMontage.jpg";
+      };
+
+      // Récupération du bouton de fermeture du modal 1
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 1
+      var span2 = document.getElementsByClassName("close")[1];
+
+      span2.onclick = function () {
+        modal2.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 1
+      var span3 = document.getElementsByClassName("close")[2];
+
+      span3.onclick = function () {
+        modal3.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 4
+      var span4 = document.getElementsByClassName("close")[3];
+
+      span4.onclick = function () {
+        modal4.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 5
+      var span5 = document.getElementsByClassName("close")[4];
+
+      span5.onclick = function () {
+        modal5.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 6
+      var span6 = document.getElementsByClassName("close")[5];
+
+      span6.onclick = function () {
+        modal6.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 7
+      var span7 = document.getElementsByClassName("close")[6];
+
+      span7.onclick = function () {
+        modal7.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 7
+      var span8 = document.getElementsByClassName("close")[7];
+
+      span8.onclick = function () {
+        modal8.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 8
+      var span9 = document.getElementsByClassName("close")[8];
+
+      span9.onclick = function () {
+        modal9.style.display = "none";
+      };
+
+      // Récupération du bouton de fermeture du modal 7
+      var span10 = document.getElementsByClassName("close")[9];
+
+      span10.onclick = function () {
+        modal10.style.display = "none";
+      };
+    </script>
+
     <script src="./script/jquery.min.js"></script>
 
     <script>
@@ -555,10 +817,8 @@
       });
 
       $(function () {
-        //run when the DOM is ready
         $("#home").click(function () {
-          //use a class, since your ID gets mangled
-          $("#homeImage").addClass("active"); //add the class to the clicked element
+          $("#homeImage").addClass("active");
           $("#aboutImage").removeClass("active");
           $("#skillImage").removeClass("active");
           $("#folioImage").removeClass("active");
@@ -568,10 +828,8 @@
         });
       });
       $(function () {
-        //run when the DOM is ready
         $("#about").click(function () {
-          //use a class, since your ID gets mangled
-          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#homeImage").removeClass("active");
           $("#aboutImage").addClass("active");
           $("#skillImage").removeClass("active");
           $("#folioImage").removeClass("active");
@@ -581,10 +839,8 @@
         });
       });
       $(function () {
-        //run when the DOM is ready
         $("#servicesnav").click(function () {
-          //use a class, since your ID gets mangled
-          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#homeImage").removeClass("active");
           $("#servicesImage").addClass("active");
           $("#aboutImage").removeClass("active");
           $("#skillImage").removeClass("active");
@@ -594,10 +850,8 @@
         });
       });
       $(function () {
-        //run when the DOM is ready
         $("#skill").click(function () {
-          //use a class, since your ID gets mangled
-          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#homeImage").removeClass("active");
           $("#aboutImage").removeClass("active");
           $("#skillImage").addClass("active");
           $("#folioImage").removeClass("active");
@@ -607,10 +861,8 @@
         });
       });
       $(function () {
-        //run when the DOM is ready
         $("#folio").click(function () {
-          //use a class, since your ID gets mangled
-          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#homeImage").removeClass("active");
           $("#aboutImage").removeClass("active");
           $("#skillImage").removeClass("active");
           $("#servicesImage").removeClass("active");
@@ -620,10 +872,8 @@
         });
       });
       $(function () {
-        //run when the DOM is ready
         $("#contactNav").click(function () {
-          //use a class, since your ID gets mangled
-          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#homeImage").removeClass("active");
           $("#aboutImage").removeClass("active");
           $("#skillImage").removeClass("active");
           $("#contactImage").addClass("active");
