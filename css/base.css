@@ -707,42 +707,4 @@ transition-duration: 0.5s; */
   justify-content: center;
   align-items: center;
   font-size: 18px;
-.portImg {
-  
-}
-
-.navigator {
-  position: fixed;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-
-}
-
-.navigator ul li {
-  list-style: none;
-}
-
-.navigator ul li span {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #434343;
-  line-height: 0;
-  text-transform: uppercase;
-  margin-left: 1rem;
-}
-
-.circle-nav {
-  width: 15%;
-}
-
-.barre {
-  width: 5%;
-  margin-left: .6rem;
-}
-
-.navigator ul li a .active{
-  content:url("../img/nav.svg");
-  width: 20%;
-  margin-left: -.4rem;;
 }
