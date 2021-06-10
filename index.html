@@ -8,6 +8,67 @@
   </head>
 
   <body>
+    <nav class="navigator">
+      <ul>
+        <li>
+          <a class="nav-link" id="home" href="#"
+            ><img
+              class="circle-nav active"
+              id="homeImage"
+              src="img/cercle.svg"
+              alt=""
+          /></a>
+          <span>Home</span>
+        </li>
+        <img class="barre" src="img/barre.svg" alt="" />
+        <li>
+          <a class="nav-link" id="about" href="#apropos"
+            ><img
+              class="circle-nav"
+              id="aboutImage"
+              src="img/cercle.svg"
+              alt=""
+          /></a>
+          <span>A propos</span>
+        </li>
+        <img class="barre" src="img/barre.svg" alt="" />
+        <li>
+          <a class="nav-link" id="" href="#compjs"
+            ><img class="circle-nav" src="img/cercle.svg" alt=""
+          /></a>
+          <span>Services</span>
+        </li>
+        <img class="barre" id="" src="img/barre.svg" alt="" />
+        <li>
+          <a class="nav-link" id="skill" href="#competences"
+            ><img
+              class="circle-nav"
+              id="skillImage"
+              src="img/cercle.svg"
+              alt=""
+          /></a>
+          <span>Compétences</span>
+        </li>
+        <img class="barre" src="img/barre.svg" alt="" />
+        <li>
+          <a class="nav-link" id="folio" href="#port"
+            ><img
+              class="circle-nav"
+              id="folioImage"
+              src="img/cercle.svg"
+              alt=""
+          /></a>
+          <span>Portfolio</span>
+        </li>
+        <img class="barre" src="img/barre.svg" alt="" />
+        <li>
+          <a class="nav-link" href="#contact"
+            ><img class="circle-nav" src="img/cercle.svg" alt=""
+          /></a>
+          <span>Contact</span>
+        </li>
+      </ul>
+    </nav>
     <header>
       <div id="head">
         <div id="reseaux">
@@ -490,6 +551,51 @@
           el.show();
           // on teste si l'élément n'a pas la classe du filtre ou que l'utilisateur ne souhaite pas tout affiché
           if (!el.hasClass(value) && value != "all") el.hide(); // on cache les éléments qu'on ne souhaite pas voir
+        });
+      });
+
+      $(function () {
+        //run when the DOM is ready
+        $("#home").click(function () {
+          //use a class, since your ID gets mangled
+          $("#homeImage").addClass("active"); //add the class to the clicked element
+          $("#aboutImage").removeClass("active");
+          $("#skillImage").removeClass("active");
+          $("#folioImage").removeClass("active");
+          console.log("eaze");
+        });
+      });
+      $(function () {
+        //run when the DOM is ready
+        $("#about").click(function () {
+          //use a class, since your ID gets mangled
+          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#aboutImage").addClass("active");
+          $("#skillImage").removeClass("active");
+          $("#folioImage").removeClass("active");
+          console.log("eaze");
+        });
+      });
+      $(function () {
+        //run when the DOM is ready
+        $("#skill").click(function () {
+          //use a class, since your ID gets mangled
+          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#aboutImage").removeClass("active");
+          $("#skillImage").addClass("active");
+          $("#folioImage").removeClass("active");
+          console.log("eaze");
+        });
+      });
+      $(function () {
+        //run when the DOM is ready
+        $("#folio").click(function () {
+          //use a class, since your ID gets mangled
+          $("#homeImage").removeClass("active"); //add the class to the clicked element
+          $("#aboutImage").removeClass("active");
+          $("#skillImage").removeClass("active");
+          $("#folioImage").addClass("active");
+          console.log("eaze");
         });
       });
     </script>
