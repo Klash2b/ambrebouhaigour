@@ -399,19 +399,73 @@
     <div id="contact">
       <div class="titre">CONTACT</div>
       <div class="formContainer">
-        <div class="formColumn">
-          <img src="./img/contact.svg" width="600">
+        <div style="width: 40%">
+          <img src="./img/contact.svg" width="630px" />
         </div>
-        <div class="formColumn">
+        <div style="width: 40%">
           <form action="">
-            <input type="text" name="nomprenom" id="nomprenom" placeholder="NOM PRÉNOM">
-            <input type="text" name="mail" id="mail" placeholder="MAIL">
-            <input type="text" name="subject" id="subject" placeholder="SUBJECT">
-            <textarea name="message" id="message" placeholder="Message" cols="40" rows="5"></textarea>
-            <input type="button" value="ENVOYER">
+            <div class="inputContainer">
+              <input
+                type="text"
+                name="nomprenom"
+                id="nomprenom"
+                placeholder="NOM PRÉNOM"
+                class="inputNom"
+              />
+              <input
+                type="text"
+                name="mail"
+                id="mail"
+                placeholder="MAIL"
+                class="inputMail"
+              />
+            </div>
+
+            <div style="width: 500px">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="SUBJECT"
+                class="inputSujet"
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              cols="40"
+              rows="5"
+              class="inputMsg"
+            ></textarea>
+            <br />
+            <input type="button" value="ENVOYER" class="inputBtn" />
           </form>
         </div>
       </div>
+    </div>
+
+    <div class="bandeauBlanc">
+      <div class="cercle"></div>
+
+      <div class="friendsLink">
+        <span><a href="#">BLOG DE LA LPMD</a></span>
+        <br />
+        <span
+          style="
+            display: flex;
+            width: 330px;
+            justify-content: space-evenly;
+            color: aqua;
+          "
+          ><a href="#">CLARA</a> <a href="#">JEAN</a>
+          <a href="#">CORALIE</a></span
+        >
+      </div>
+    </div>
+
+    <div class="bandeauCreatedBy">
+      <span>©2020 - Created by Ambre Bouhaigour </span>
     </div>
 
     <script src="./script/jquery.min.js"></script>

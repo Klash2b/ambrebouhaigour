@@ -615,13 +615,96 @@ transition-duration: 0.5s; */
 .formContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .formColumn {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 50%;
+}
+
+.inputContainer {
+  display: flex;
+  width: 101%;
+  justify-content: space-between;
+}
+
+.inputNom {
+  width: 46%;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.inputMail {
+  width: 46%;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.inputSujet {
+  width: 119.5%;
+  margin-top: 20px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.inputMsg {
+  height: 200px;
+  width: 98.75%;
+  margin-top: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.inputBtn {
+  font-size: 20px;
+  margin-top: 20px;
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  border: none;
+}
+
+.bandeauBlanc {
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cercle {
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 999999px;
+  background-color: chocolate;
+}
+
+.friendsLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.bandeauCreatedBy {
+  width: 100%;
+  height: 50px;
+  background-color: #54403f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
